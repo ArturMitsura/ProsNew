@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Profile without photo</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622220423">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230622220423"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230622220423" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230622220423"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="250" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
+					<div class="header__location">
+						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
+						<span class="header__city">Los Angeles</span>
+						<form action="#" class="header__location-body location-form">
+							<div class="location-form__row">
+								<button type="submit" class="location-form__button"><img src="img/icons/gps-mini.svg" alt="gps"></button>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Enter your location " class="location-form__input">
+							</div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27398945304!2d-118.69191443935257!3d34.02016132021932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sca!4v1673352287944!5m2!1sru!2sca" width="306" height="256" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+							<div class="location-form__btns">
+								<button class="location-form__btn-select button button_blue">Select location</button>
+								<button class="location-form__btn-cancel button button_red">Cancel changes</button>
+							</div>
+						</form>
+					</div>
+					<div class="header__online online-key _active-online">
+						<div class="online-key__body">
+							<div class="online-key__indicator"></div>
+						</div>
+						<div class="online-key__text">Online</div>
+					</div>
+					<div class="header__alerts _icon-Notifications _alertsSMS">
+
+						<div class="header__alerts-body alerts-body _loading-alerts">
+							<div class="alerts-body__title">
+								<p>Notifications</p>
+								<p><span>1</span> New</p>
+							</div>
+							<ul class="alerts-body__list">
+								<li class="alerts-body__item alerts-body__item_sms"><a class="alerts-body__link" href="#">
+										<div class="alerts-body__icon"><img src="img/ava-message/ava_message3.jpg" alt="ava"></div>
+										<div class="alerts-body__content">
+											<div class="alerts-body__top-info">
+												<p><span>New message</span> received</p>
+											</div>
+											<div class="alerts-body__description">
+												<p><span>Status online</span>
+													as available for your use as available for your use</p>
+											</div>
+										</div>
+									</a></li>
+								<li class="alerts-body__item alerts-body__item_pay"><a class="alerts-body__link" href="#">
+										<div class="alerts-body__icon alerts-body__icon_yes"></div>
+										<div class="alerts-body__content">
+											<div class="alerts-body__top-info">
+												<p><span>Payment</span> was successful</p>
+											</div>
+											<div class="alerts-body__description">
+												<p><span>Status online</span>
+													as available for your use as available for your use</p>
+											</div>
+										</div>
+									</a></li>
+								<li class="alerts-body__item alerts-body__item_pay"><a class="alerts-body__link" href="#">
+										<div class="alerts-body__icon alerts-body__icon_no"></div>
+										<div class="alerts-body__content">
+											<div class="alerts-body__top-info">
+												<p><span>Payment</span> unsuccessful</p>
+											</div>
+											<div class="alerts-body__description">
+												<p><span>Status online</span>
+													as available for your useavailable for your use as availabl as available for your
+													use
+												</p>
+											</div>
+										</div>
+									</a></li>
+							</ul>
+							<div class="alerts-body__zero">No notifications yet</div>
+						</div>
+
+						<div class="header__alerts-counter"><span>9</span></div>
+					</div>
+					<div class="header__profile icon-menu">
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+						<nav class="header__menu-pc menu-pc">
+							<ul class="menu-pc__list">
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-User2" href="profile_with_photo.html">Profile</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link menu-pc__link_border _icon-Dialog1" href="active_chats.html">Chats</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="home.html">Billing Plans</a>
+								</li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Settings" href="account_settings.html">Profile
+										Settings</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-faq" href="faq_payment.html">FAQ</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="home.html">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<a href="#" class="menu__logo"><img src="img/Logo.png" alt="Logo"></a>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="profile_with_photo.html" class="menu__link _icon-User2">Profile</a></li>
+							<li class="menu__item"><a href="active_chats.html" class="menu__link _icon-Dialog1">Chats</a></li>
+							<li class="menu__item"><a href="account_settings.html" class="menu__link _icon-Settings">Settings</a>
+							</li>
+							<li class="menu__item"><a href="faq_payment.html" class="menu__link _icon-faq">FAQ</a></li>
+							<li class="menu__item"><a href="home.html" class="menu__link _icon-Logout">Logout</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__profile profile-widthoutphoto">
+				<div class="profile-widthoutphoto__container">
+					<div class="profile-widthoutphoto__body">
+						<div class="profile-widthoutphoto__panel">
+							<div class="profile-user-card">
+								<div class="profile-user-card__online">online</div>
+								<div class="profile-user-card__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+								<div class="profile-user-card__name">Roman Loginov</div>
+								<div class="profile-user-card__description">CUSTOMER</div>
+							</div>
+							<form class="profile-widthoutphoto__form" action="#"><button type="submit" class="profile-widthoutphoto__call button button_green _fw">Request a call</button></form>
+							<div class="profile-user-overview">
+								<div class="profile-user-overview__title">Overview</div>
+								<div class="profile-user-overview__item">
+									<div class="profile-user-overview__top">Email:</div>
+									<div class="profile-user-overview__email">soxatui2210@gmail.com</div>
+								</div>
+								<div class="profile-user-overview__item">
+									<div class="profile-user-overview__top">Joined:</div>
+									<div class="profile-user-overview__date">December 15, 2022</div>
+								</div>
+								<div class="profile-user-overview__item">
+									<div class="profile-user-overview__top">Background Check:</div>
+									<div class="profile-user-overview__verified">Not Verified</div>
+								</div>
+								<div class="profile-user-overview__item">
+									<div class="profile-user-overview__top">Employees:</div>
+									<div class="profile-user-overview__employees"><span>1</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="profile-widthoutphoto__wrapper">
+							<div class="profile-widthoutphoto__loads">
+								<div class="profile-user-loads">
+									<div class="profile-user-loads__title">
+										<span>Featured Projects</span>
+										<a href="#">Link for new projects</a>
+									</div>
+									<div class="profile-user-loads__zero">You don’t have any projescts yet.</div>
+									<form action="#" class="profile-user-loads__form form-user-load">
+										<div class="form-user-load__item">
+											<input class="form-user-load__input form-user-load__input_btn" accept=".jpg, .png, .jpeg" type="file"></input>
+											<div class="form-user-load__file button_blue _fw">Upload new
+												photos</div>
+										</div>
+										<div class="form-user-load__item form-user-load__item_long">
+											<input type="file" name="form[]" accept=".jpg, .png, .gif" data-error="Ошибка" placeholder="" class="form-user-load__input">
+											<div class="form-user-load__file-area">
+
+												<div class="form-user-load__file-instruction">Drop photos here or click to upload.
+												</div>
+												<div class="form-user-load__file-icon _icon-Upload"></div>
+
+											</div>
+										</div>
+										<div class="form-user-load__warning">Maximum number of uploaded photos - 1.</div>
+										<button class="form-user-load__remove button button_green _fw" type="submit">Remove the
+											restriction</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="profile-widthoutphoto__dialog dialog-message">
+					<div class="dialog-message__button _icon-Dialog1"><span class="dialog-message__amount">23</span></div>
+				</button>
+				<div class="full-chats__hide-body">
+					<div class="full-chats__hide-header">
+						Chats
+					</div>
+					<div class="full-chats__wrapper full-chats__wrapper_hide">
+						<div class="full-chats__navigation-full navigation-full-chats navigation-full-chats">
+							<div class="navigation-full-chats__top">
+								<div class="navigation-full-chats__avatar-user avatar-user-chats"><img src="img/avatar.jpg" alt="avatar"></div>
+								<form action="#" class="navigation-full-chats__form navigation-chats-form">
+									<button type="submit" class="navigation-chats-form__button _icon-Search"></button>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search dialog..." class="navigation-chats-form__search">
+								</form>
+							</div>
+							<div class="navigation-full-chats__body navigation-chats-body">
+								<div class="navigation-chats-body__dialog dialog-chats-navigation _active-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Amanda</div>
+											<div class="dialog-chats-navigation__message"> Hello! How are you? Hello! How are you?
+												Hello! How are you? Hello! How are you? Hello! How are you? Hello! How are you?
+											</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+								<div class="navigation-chats-body__dialog dialog-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Joe</div>
+											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+								<div class="navigation-chats-body__dialog dialog-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Thomas</div>
+											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+								<div class="navigation-chats-body__dialog dialog-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Aleksandr</div>
+											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+							</div>
+						</div>
+						<div class="full-chats__window window-full-chats">
+							<div class="window-full-chats__content">
+								<div data-popup="#start-conversation" class="window-full-chats__start-conversation start-conversation-chats">
+									<div class="start-conversation-chats__icon _icon-Dialog1"></div>
+									<div class="start-conversation-chats__text">Start Conversation</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<div id="start-conversation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Chats</div>
+				<div class="navigation-chats-body">
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Amanda</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Joe</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Thomas</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Aleksandr</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ====================================================================== -->
+	<div id="new-project" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_new-project">
+				<div class="popup__title popup__title_big">
+					New project
+				</div>
+				<div class="new-project-popup">
+					<form action="#" class="new-project-popup__form">
+						<div class="new-project-popup__inputs">
+							<div class="new-project-popup__row">
+								<label for="new-project-title" class="new-project-popup__label">Title</label>
+								<input data-validate id="new-project-title" class="new-project-popup__inp" autocomplete="off" type="text" name="form[]" data-error="" placeholder="">
+							</div>
+							<div class="new-project-popup__row">
+								<label for="new-project-services" class="new-project-popup__label">Services</label>
+								<input id="new-project-services" class="new-project-popup__inp" autocomplete="off" type="text" name="form[]" data-error="" placeholder="">
+							</div>
+						</div>
+						<div class="new-project-popup__row">
+							<label for="new-project-description" class="new-project-popup__label">Description</label>
+							<textarea name="form[]" id="new-project-description" class="new-project-popup__textarea"></textarea>
+						</div>
+						<div class="new-project-popup__item new-project-popup__item_long">
+							<input type="file" name="form[]" accept=".jpg, .png, .gif" class="new-project-popup__input">
+							<div class="new-project-popup__file-area">
+								<div class="new-project-popup__file-instruction">
+									<span>Drop photos here or click to upload.</span>
+									<span>Upload new photos</span>
+								</div>
+								<div class="new-project-popup__file-icon _icon-Upload"></div>
+							</div>
+						</div>
+						<div class="new-project-popup__create">
+							<button type="submit" class="new-project-popup__button button button_blue _fw">Create</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ====================================================================== -->
+	<div id="verification-request" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_new-project">
+				<div class="popup__title">
+					Verification request
+				</div>
+				<div class="new-photo-popup">
+					<form action="#" class="new-photo-popup__form">
+						<div class="new-photo-popup__title">Upload your passport photo:</div>
+						<div class="new-photo-popup__load">
+							<div class="new-photo-popup__inputs">
+								<div class="new-photo-popup__file-row">
+									<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="" placeholder="" class="new-photo-popup__file" data-placeholder="">
+									<div class="new-photo-popup__file-btn  button_green">Upload</div>
+								</div>
+								<button autocomplete="off" type="reset" name="form[]" data-error="" placeholder="" class="new-photo-popup__reset button button_white-border">Reset
+								</button>
+							</div>
+							<div class="new-photo-popup__type-photo">Allowed file types: png, jpg, jpeg.
+							</div>
+						</div>
+						<div class="new-photo-popup__title">Enter your verification data:</div>
+						<textarea class="new-photo-popup__message" name="message" id="full-chats-message" placeholder=""></textarea>
+						<div class="new-photo-popup__send">
+							<button type="submit" class="new-photo-popup__button button button_blue">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230622220423"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Personal Information</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622220423">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230622220423"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230622220423" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230622220423"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page__personal-information personal-information">
+				<div class="personal-information__body">
+					<div class="personal-information__image-ibg"><img src="img/people/young-woman.jpg" alt="woman">
+					</div>
+					<div class="personal-information__content">
+						<div class="personal-information__block">
+							<div class="personal-information__logo"><img src="img/Logo.png" alt="ProsNow"></div>
+							<div class="personal-information__title">Personal Information</div>
+							<form action="#" class="personal-information__form form-personal-information">
+								<div class="form-personal-information__item">
+									<label for="form-personal-information-fname" class="form-personal-information__label">First
+										Name</label>
+									<input data-validate data-required id="form-personal-information-fname" class="form-personal-information__input" type="text" autocomplete="off" name="form[]" data-error="" placeholder="Joe">
+								</div>
+								<div class="form-personal-information__item">
+									<label for="form-personal-information-lname" class="form-personal-information__label">Last
+										Name</label>
+									<input data-validate data-required id="form-personal-information-lname" class="form-personal-information__input" type="text" autocomplete="off" name="form[]" data-error="" placeholder="Doe">
+								</div>
+								<div class="form-personal-information__item">
+									<label for="form-personal-information-mobile" class="form-personal-information__label">Mobile
+										number <span>(optionally)</span></label>
+									<input data-validate data-required id="form-personal-information-mobile" class="form-personal-information__input" type="number" autocomplete="off" name="form[]" data-error="" placeholder="(472) 123-4567">
+								</div>
+								<div class="form-personal-information__item">
+									<label for="form-personal-information-zipcode" class="form-personal-information__label">ZIP
+										Code <span>(optionally)</span></label>
+									<input data-validate data-required id="form-personal-information-zipcode" class="form-personal-information__input" type="number" autocomplete="off" name="form[]" data-error="" placeholder="12345">
+								</div>
+								<div class="correction-account-settings__col2 correction-account-settings__col2_account">
+									<label class="correction-account-settings__label" for="quantity2-label">Employees</label>
+									<div data-quantity="" class="correction-account-settings__quantity quantity">
+										<button data-quantity-plus="" type="button" class="quantity__button quantity__button_plus">+</button>
+										<div class="quantity__input">
+											<input id="quantity2-label" data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-minus="" type="button" class="quantity__button quantity__button_minus">-</button>
+									</div>
+								</div>
+								<div class="form-personal-information__row">
+									<button type="submit" class="form-personal-information__button button button_glass">Back</button>
+									<button type="submit" class="form-personal-information__button button button_green-mark">Confirm</button>
+								</div>
+							</form>
+							<div class="personal-information__info-wrapp">
+								<div class="create-account__info info-block">
+									<div class="info-block__text">
+										<p>Before you start meeting customers, you need to tell us which jobs you're interested
+											in.
+											You'll do that by setting targeting preferences. You'll also need to add a few things
+											to
+											your profile (like a profile photo and a review). Once your targeting preferences and
+											profile are set up, you can start meeting customers.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230622220423"></script>
+</body>
+
+</html>
