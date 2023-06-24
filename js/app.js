@@ -2979,7 +2979,7 @@
                 exec
             });
         },
-        3344: (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+        7873: (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
             "use strict";
             var charAt = __webpack_require__(7321).charAt;
             var toString = __webpack_require__(7655);
@@ -7797,7 +7797,7 @@
         __webpack_require__(7692);
         __webpack_require__(8165);
         __webpack_require__(7543);
-        __webpack_require__(3344);
+        __webpack_require__(7873);
         __webpack_require__(7323);
         __webpack_require__(4079);
         var lodash_throttle = __webpack_require__(3096);
@@ -9134,34 +9134,6 @@
             el.addEventListener("input", (e => {
                 el.style.height = "auto";
                 el.style.height = el.scrollHeight + "px";
-            }));
-        }));
-        $(document).ready((function() {
-            let $select = $("#services").select2();
-            const _template = icon => {
-                if (!icon.id) return icon.text;
-                let $option = $(icon.element);
-                let $image = `<span class="bg-white me-1 p-25"><img class="img-cover" src="${$option.data("icon")}" width="20" height="20" /></span>`;
-                return $image + icon.text;
-            };
-            $select.select2({
-                dropdownAutoWidth: true,
-                allowClear: true,
-                width: "100%",
-                dropdownParent: $select.parent(),
-                templateResult: _template,
-                templateSelection: _template,
-                escapeMarkup: function(es) {
-                    return es;
-                }
-            });
-            $("#services").one("select2:open", (function(e) {
-                $("input.select2-search__field").prop("placeholder", "⌕ search");
-            }));
-            $((function() {
-                $(".select2").on("mousedown", (function() {
-                    $(".select2-dropdown").slideToggle(0).slideToggle(350);
-                }));
             }));
         }));
         window["FLS"] = true;
