@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230624184929">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230624184929"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230624184929" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230624184929"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_orange">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo header__logo_orange"><picture><source srcset="img/Logo-white.webp" type="image/webp"><img src="img/Logo-white.png" alt="PROS NOW"></picture></div>
+					<div class="header__alerts _icon-Notifications _alertsSMS">
+
+						<div class="header__alerts-body alerts-body _loading-alerts">
+							<div class="alerts-body__title">
+								<p>Notifications</p>
+								<p><span>1</span> New</p>
+							</div>
+							<ul class="alerts-body__list">
+								<li class="alerts-body__item alerts-body__item_sms"><a class="alerts-body__link" href="#">
+										<div class="alerts-body__icon"><picture><source srcset="img/ava-message/ava_message3.webp" type="image/webp"><img src="img/ava-message/ava_message3.jpg" alt="ava"></picture></div>
+										<div class="alerts-body__content">
+											<div class="alerts-body__top-info">
+												<p><span>New message</span> received</p>
+											</div>
+											<div class="alerts-body__description">
+												<p><span>Status online</span>
+													as available for your use as available for your use</p>
+											</div>
+										</div>
+									</a></li>
+								<li class="alerts-body__item alerts-body__item_pay"><a class="alerts-body__link" href="#">
+										<div class="alerts-body__icon alerts-body__icon_yes"></div>
+										<div class="alerts-body__content">
+											<div class="alerts-body__top-info">
+												<p><span>Payment</span> was successful</p>
+											</div>
+											<div class="alerts-body__description">
+												<p><span>Status online</span>
+													as available for your use as available for your use</p>
+											</div>
+										</div>
+									</a></li>
+								<li class="alerts-body__item alerts-body__item_pay"><a class="alerts-body__link" href="#">
+										<div class="alerts-body__icon alerts-body__icon_no"></div>
+										<div class="alerts-body__content">
+											<div class="alerts-body__top-info">
+												<p><span>Payment</span> unsuccessful</p>
+											</div>
+											<div class="alerts-body__description">
+												<p><span>Status online</span>
+													as available for your useavailable for your use as availabl as available for your
+													use
+												</p>
+											</div>
+										</div>
+									</a></li>
+							</ul>
+							<div class="alerts-body__zero">No notifications yet</div>
+						</div>
+
+						<div class="header__alerts-counter"><span>9</span></div>
+					</div>
+					<div class="header__profile icon-menu">
+						<div class="header__avatar"><picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="avatar"></picture></div>
+						<nav class="header__menu-pc menu-pc">
+							<ul class="menu-pc__list">
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-User2" href="profile_with_photo.html">Profile</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link menu-pc__link_border _icon-Dialog1" href="active_chats.html">Chats</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="home.html">Billing Plans</a>
+								</li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Settings" href="account_settings.html">Profile
+										Settings</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-faq" href="faq_payment.html">FAQ</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="home.html">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<a href="#" class="menu__logo"><picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="Logo"></picture></a>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="profile_with_photo.html" class="menu__link _icon-User2">Profile</a></li>
+							<li class="menu__item"><a href="active_chats.html" class="menu__link _icon-Dialog1">Chats</a></li>
+							<li class="menu__item"><a href="account_settings.html" class="menu__link _icon-Settings">Settings</a>
+							</li>
+							<li class="menu__item"><a href="faq_payment.html" class="menu__link _icon-faq">FAQ</a></li>
+							<li class="menu__item"><a href="home.html" class="menu__link _icon-Logout">Logout</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-page">
+				<div class="main-page__container">
+					<div class="main-page__body">
+						<div class="main-page__content">
+							<div class="main-page__points4"><img src="img/icons/points4.svg" alt="points"></div>
+							<h1 class="main-page__title">Find PROS near you available now!</h1>
+							<div data-da=".main-page__column, 768" class="map-page__container">
+								<form action="#" class="map-page__form form-main">
+									<!-- _select2_multiple -->
+									<div class="form-main__help">
+										<select id="services" data-placeholder="I need help with" data-search="Search" class="form-main__select select2-hidden-accessible" name="form[]" data-class-modif="form-main" hidden="" data-id="1" data-speed="150" data-select2-id="services" tabindex="-1" aria-hidden="true">
+											<option value="" data-select2-id="2">I need help with</option>
+											<optgroup label="Popular Services">
+												<option data-icon="img/icons/Wrench2.svg" value="1">
+													Handyman</option>
+												<option data-icon="img/icons/House.svg" value="2">
+													House Cleaning</option>
+												<option data-icon="img/icons/Moving-truck.svg" value="3">
+													Local moving (under 50 miles)</option>
+												<option data-icon="img/icons/Delivery-truck.svg" value="5">
+													Appliance repair</option>
+											</optgroup>
+											<optgroup label="Other">
+												<option data-icon="img/icons/Carpet-cleaner.svg" value="6">
+													Furniture moving</option>
+												<option data-icon="img/icons/Hard-drive.svg" value="7">
+													Carpet cleaning water</option>
+												<option data-icon="img/icons/Window-cleaner.svg" value="8">
+													Damage cleanup and Restoration
+												</option>
+												<option data-icon="img/icons/Tiles.svg" value="9">Window cleaning</option>
+												<option data-icon="img/icons/Tiles.svg" value="10">
+													Tile and grout cleaning</option>
+												<option data-icon="img/icons/Cleaning-brush.svg" value="11">
+													Roof cleaning</option>
+												<option data-icon="img/icons/Garage.svg" value="12">
+													Garage, Basement or Attic cleaning</option>
+												<option data-icon="img/icons/Flor-mop.svg" value="13">
+													Floor cleaning</option>
+												<option data-icon="img/icons/Solar-panel.svg" value="13">
+													Solar panel cleaning</option>
+											</optgroup>
+										</select>
+									</div>
+									<div class="form-main__zip">
+										<label class="form-main__lbl-zip" for="zip-code"><img src="img/icons/zip.svg" alt="`"></label>
+										<input id="zip-code" class="form-main__input" autocomplete="off" type="number" name="form[]" data-error="" placeholder="ZIP Code">
+									</div>
+									<div class="form-main__btn">
+										<button class=" form-main__button button button_lightblue" type="submit">Search</button>
+									</div>
+								</form>
+							</div>
+							<p class="main-page__description">Our service is trusted and the pros is certified. <a href="#">Read more</a></p>
+						</div>
+						<!-- <button data-goto-speed="1500" data-goto=".how-page" type="button" class="main-page__btn-bottom"><img
+								src="img/icons/Arrow.svg" alt="bottom">
+						</button> -->
+						<!-- <div class="main-page__images">
+
+							<div class="main-page__image main-page__image_plumber"><img src="img/people/plumbe2.png"
+									alt="plumber">
+							</div>
+							<div data-prlx-parent class="main-page__image main-image">
+								<div data-prlx class="main-image__location main-image__location_1">
+									<img data-prlx-mouse data-prlx-cx="20" data-prlx-cy="20" data-prlx-dxr
+										src="img/location.svg" alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_2"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" data-prlx-dxr data-prlx-dyr src="img/location.svg"
+										alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_3"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" data-prlx-dyr src="img/location.svg" alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_4"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" data-prlx-dxr src="img/location.svg" alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_5"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" data-prlx-dxr data-prlx-dyr src="img/location.svg"
+										alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_6"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" data-prlx-dyr src="img/location.svg" alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_7"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" src="img/location.svg" alt="gps">
+								</div>
+								<div data-prlx class="main-image__location main-image__location_8"><img data-prlx-mouse
+										data-prlx-cx="20" data-prlx-cy="20" data-prlx-dxr src="img/location.svg" alt="gps">
+								</div>
+							</div>
+						</div> -->
+						<div class="main-page__column">
+
+							<div class="main-page__wrapp">
+								<div class="main-page__points48"><img src="img/icons/points48.svg" alt="points"></div>
+								<div class="main-page__main-photo-ibg"><picture><source srcset="img/people/hapy_girl.webp" type="image/webp"><img src="img/people/hapy_girl.jpg" alt="girl"></picture></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="page__how how-page">
+				<div class="how-page__container">
+					<div class="how-page__content">
+						<div class="how-page__body">
+							<div class="how-page__title">
+								<p>How we are</p><span>working</span>
+							</div>
+							<div class="how-page__text">Our service connects customers with pros who are available to handle
+								their project immediately</div>
+						</div>
+						<div class="how-page__points">
+							<div class="how-page__point">
+								<div class="how-page__number"><span>1</span></div>
+								<div class="how-page__description">You only see pros available now!</div>
+							</div>
+							<div class="how-page__point">
+								<div class="how-page__number"><span>2</span></div>
+								<div class="how-page__description">No registration required to find pros near you!</div>
+							</div>
+							<div class="how-page__point">
+								<div class="how-page__number"><span>3</span></div>
+								<div class="how-page__description">Get last-minute help when you need it most!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<section class="page__map map-page">
+				<div class="map-page__wrapp">
+					<div class="map-page__location"><!-- _loading-map -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1009325.4178588598!2d-118.1507303409819!3d33.67919546953973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sby!4v1673188603078!5m2!1sru!2sby" width="1440" height="756" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+					<!-------------------------------------------------------------->
+
+				</div>
+			</section>
+			<!-- <section class="page__featured featured-page">
+				<div class="featured-page__container">
+					<div class="featured-page__title">Featured <span>pros</span></div>
+					<div class="featured-page__content">
+						<div class="featured-page__card card-featured">
+							<div class="card-featured__body">
+								<div class="card-featured__title">Electrician</div>
+								<div class="card-featured__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+							</div>
+							<div class="card-featured__image-ibg"><img src="img/people/professional2_mobile.jpg"
+									alt="professional"></div>
+						</div>
+						<div class="featured-page__card card-featured">
+							<div class="card-featured__body">
+								<div class="card-featured__title">Cleaning</div>
+								<div class="card-featured__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+							</div>
+							<div class="card-featured__image-ibg"><img src="img/people/young-woman_mobile.jpg"
+									alt="young woman">
+							</div>
+						</div>
+						<div class="featured-page__card card-featured">
+							<div class="card-featured__body">
+								<div class="card-featured__title">Plumber</div>
+								<div class="card-featured__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+							</div>
+							<div class="card-featured__image-ibg"><picture><source srcset="img/people/male-plumber.webp" type="image/webp"><img src="img/people/male-plumber.jpg" alt="plumber"></picture></div>
+						</div>
+						<div class="featured-page__card card-featured">
+							<div class="card-featured__body">
+								<div class="card-featured__title">Dog walker</div>
+								<div class="card-featured__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+							</div>
+							<div class="card-featured__image-ibg"><picture><source srcset="img/people/man_mobile.webp" type="image/webp"><img src="img/people/man_mobile.jpg" alt="man"></picture></div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<section class="page__verified verified-page">
+				<div class="verified-page__container">
+					<div class="verified-page__top top-verified">
+						<div class="top-verified__title title_new">Verified pros</div>
+						<div class="top-verified__navigation">
+							<div class="top-verified__show">Show Items by :</div>
+							<select class="top-verified__select" name="form[]" data-class-modif="form">
+								<option class="top-verified__option" value="1" selected>Online</option>
+								<option class="top-verified__option" value="2">Ofline</option>
+							</select>
+							<!-- 	<select id="service" data-placeholder="I need help with" data-search="Search"
+								class="form-main__select select2-hidden-accessible" name="form[]" data-class-modif="form-main"
+								hidden="" data-id="1" data-speed="150" data-select2-id="services" tabindex="-1"
+								aria-hidden="true">
+								<option value="" data-select2-id="2">I need help with</option>
+								<option value="1">Online</option>
+								<option value="2">Ofline</option>
+							</select> -->
+						</div>
+					</div>
+					<div class="verified-page__content content-verified">
+						<div class="content-verified__card card-verified">
+							<div class="card-verified__skill">Handyman</div>
+							<div class="card-verified__title">Handyman services in
+								your local neighborhood
+							</div>
+							<div class="card-verified__data">
+								<div class="card-verified__gps">
+									<div class="card-verified__icon"><img src="img/icons/Gps2.svg" alt="gps"></div>
+									<p>Mid East</p>
+								</div>
+								<div class="card-verified__time">
+									<div class="card-verified__icon"><img src="img/icons/Time2.svg" alt="time"></div>
+									<p>Full Time</p>
+								</div>
+							</div>
+							<div class="card-verified__info">
+								<div class="card-verified__ava"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture></div>
+								<div class="card-verified__name">Mr. Alex </div>
+								<div class="card-verified__status">Online</div>
+							</div>
+						</div>
+						<div class="content-verified__card card-verified">
+							<div class="card-verified__skill">Handyman</div>
+							<div class="card-verified__title">Handyman services in
+								your local neighborhood
+							</div>
+							<div class="card-verified__data">
+								<div class="card-verified__gps">
+									<div class="card-verified__icon"><img src="img/icons/Gps2.svg" alt="gps"></div>
+									<p>Mid East</p>
+								</div>
+								<div class="card-verified__time">
+									<div class="card-verified__icon"><img src="img/icons/Time2.svg" alt="time"></div>
+									<p>Full Time</p>
+								</div>
+							</div>
+							<div class="card-verified__info">
+								<div class="card-verified__ava"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture></div>
+								<div class="card-verified__name">Mr. Alex </div>
+								<div class="card-verified__status">Online</div>
+							</div>
+						</div>
+						<div class="content-verified__card card-verified">
+							<div class="card-verified__skill">Handyman</div>
+							<div class="card-verified__title">Handyman services in
+								your local neighborhood
+							</div>
+							<div class="card-verified__data">
+								<div class="card-verified__gps">
+									<div class="card-verified__icon"><img src="img/icons/Gps2.svg" alt="gps"></div>
+									<p>Mid East</p>
+								</div>
+								<div class="card-verified__time">
+									<div class="card-verified__icon"><img src="img/icons/Time2.svg" alt="time"></div>
+									<p>Full Time</p>
+								</div>
+							</div>
+							<div class="card-verified__info">
+								<div class="card-verified__ava"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture></div>
+								<div class="card-verified__name">Mr. Alex </div>
+								<div class="card-verified__status">Online</div>
+							</div>
+						</div>
+						<div class="content-verified__card card-verified">
+							<div class="card-verified__skill">Handyman</div>
+							<div class="card-verified__title">Handyman services in
+								your local neighborhood
+							</div>
+							<div class="card-verified__data">
+								<div class="card-verified__gps">
+									<div class="card-verified__icon"><img src="img/icons/Gps2.svg" alt="gps"></div>
+									<p>Mid East</p>
+								</div>
+								<div class="card-verified__time">
+									<div class="card-verified__icon"><img src="img/icons/Time2.svg" alt="time"></div>
+									<p>Full Time</p>
+								</div>
+							</div>
+							<div class="card-verified__info">
+								<div class="card-verified__ava"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture></div>
+								<div class="card-verified__name">Mr. Alex </div>
+								<div class="card-verified__status">Online</div>
+							</div>
+						</div>
+						<div class="content-verified__card card-verified">
+							<div class="card-verified__skill">Handyman</div>
+							<div class="card-verified__title">Handyman services in
+								your local neighborhood
+							</div>
+							<div class="card-verified__data">
+								<div class="card-verified__gps">
+									<div class="card-verified__icon"><img src="img/icons/Gps2.svg" alt="gps"></div>
+									<p>Mid East</p>
+								</div>
+								<div class="card-verified__time">
+									<div class="card-verified__icon"><img src="img/icons/Time2.svg" alt="time"></div>
+									<p>Full Time</p>
+								</div>
+							</div>
+							<div class="card-verified__info">
+								<div class="card-verified__ava"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture></div>
+								<div class="card-verified__name">Mr. Alex </div>
+								<div class="card-verified__status">Online</div>
+							</div>
+						</div>
+						<div class="content-verified__cards cards-verified">
+							<div class="cards-verified__count"><span>328</span>+</div>
+							<div class="cards-verified__info">Verified PROS</div>
+							<a href="#" class="cards-verified__button">EXPLORE PROS</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__people people-page">
+				<div class="people-page__container">
+					<div class="people-page__top">
+						<div class="people-page__title title_new">We help not one, but many people</div>
+						<div class="people-page__text">
+							<p>We have many more high-skilled pros. Who are ready to help exactly in time</p>
+						</div>
+					</div>
+				</div>
+				<div class="peoplle-page__wrappp-slider">
+					<div class="peoplle-page__image-wrapp"><picture><source srcset="img/people/people-happy.webp" type="image/webp"><img src="img/people/people-happy.jpg" alt="people"></picture></div>
+					<!-- Оболочка слайдера -->
+					<div class="peoplle-page__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="peoplle-page__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="peoplle-page__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<div class="swiper-slide__avatar"><picture><source srcset="img/people/professional2.webp" type="image/webp"><img src="img/people/professional2.jpg" alt="ava"></picture>
+									</div>
+									<div class="swiper-slide__comment">
+										<p>Plumber Archie Roy is an excellent specialist. I arrived quickly and fixed it.
+											Everything was neat and clean.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+			</section>
+			<section class="page__choose choose-page">
+				<div class="choose-page__container">
+					<div class="choose-page__body">
+						<div class="choose-page__image-wrapp">
+							<div class="choose-page__image-ibg"><picture><source srcset="img/people/hapy_girl2.webp" type="image/webp"><img src="img/people/hapy_girl2.jpg" alt="pros"></picture></div>
+						</div>
+						<div class="choose-page__content">
+							<div class="choose-page__title">Why <span>pros</span> <br> Choose us</div>
+							<div class="choose-page__item">
+								<div class="choose-page__number"><img src="img/icons/Сheck-mark2.svg" alt="point"></div>
+								<div class="choose-page__text">Pros-now help you connect with your ideal prospects and convert
+									them
+									into long-term customers that can help you scale your service business.</div>
+							</div>
+							<div class="choose-page__item">
+								<div class="choose-page__number"><img src="img/icons/Сheck-mark2.svg" alt="point"></div>
+								<div class="choose-page__text">No commission or fees! You'll get paid 100% of what you quote
+									when
+									you negotiate directly with the customer.</div>
+							</div>
+							<div class="choose-page__item">
+								<div class="choose-page__number"><img src="img/icons/Сheck-mark2.svg" alt="point"></div>
+								<div class="choose-page__text">By signing up as a pro, you can list what you offer on the site,
+									communicate with leads, set up appointments with customers, and get paid top $.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer2">
+			<div class="footer2__container">
+				<div class="footer2__body">
+					<div class="footer2__contacts">
+						<div class="footer2__logo"><picture><source srcset="img/Logo-white.webp" type="image/webp"><img src="img/Logo-white.png" alt="logo"></picture></div>
+						<p class="footer2__text">We will find a PRO for you. Right on time</p>
+						<div class="footer2__socials">
+							<a class="footer2__social"><img src="img/icons/w_google.svg" alt="google"></a>
+							<a class="footer2__social"><img src="img/icons/w_twitter.svg" alt="twitter"></a>
+							<a class="footer2__social"><img src="img/icons/w_instagram.svg" alt="instagram"></a>
+							<a class="footer2__social"><img src="img/icons/w_linkedin.svg" alt="linkedin"></a>
+							<a class="footer2__social"><img src="img/icons/w_youtube.svg" alt="youtube"></a>
+						</div>
+					</div>
+					<nav class="footer2__menu menu-footer2">
+						<div class="menu-footer2__wrapp">
+							<div class="menu-footer2__button">Services</div>
+							<ul class="menu-footer2__list">
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Pros verify</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Post a job</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Log in</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Sign up</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Background check</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer2__wrapp">
+							<div class="menu-footer2__button">Category</div>
+							<ul class="menu-footer2__list">
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Handyman</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Movers</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Auto mechanics</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Dog walkers</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Locksmith</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer2__wrapp">
+							<div class="menu-footer2__button">Company</div>
+							<ul class="menu-footer2__list">
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">About</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Terms</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">News</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer2__wrapp">
+							<div class="menu-footer2__button">More</div>
+							<ul class="menu-footer2__list">
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Blog</a></li>
+								<li class="menu-footer2__item"><a href="" class="menu-footer2__link">Privacy policy</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="footer2__copyright">
+					<p>© 2023 All rights reserved </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230624184929"></script>
+</body>
+
+</html>
